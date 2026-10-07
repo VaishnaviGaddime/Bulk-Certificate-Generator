@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 80px;
+        }
+
+        .certificate {
+            border: 8px solid #333;
+            padding: 60px;
+            width: 800px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+
+        .subtitle {
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+
+        .recipient {
+            font-size: 34px;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+
+        .details {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="certificate">
+
+        <h1>Certificate of Participation</h1>
+
+        <div class="subtitle">
+            This certificate is proudly presented to
+        </div>
+
+        <div class="recipient">
+            {{ recipient_name }}
+        </div>
+
+        <div class="details">
+            for successfully participating in
+            <strong>{{ event_name }}</strong>
+            <br>
+
+            Organized by
+            <strong>{{ organization }}</strong>
+            <br>
+
+            Date:
+            <strong>{{ event_date }}</strong>
+        </div>
+
+    </div>
+
+</body>
+</html>
